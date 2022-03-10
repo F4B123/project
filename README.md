@@ -1,6 +1,5 @@
 # Day 1 Activities
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 - [x] Configure workspace 
 - [x] Create a components diagram
