@@ -1,5 +1,6 @@
 # Day 1 Activities
 
+[Components diagram](https://drive.google.com/file/d/1U8MP5o2pbKGZtgNeUAfdEqi5K9-HsXiT/view?usp=sharing)
 
 - [x] Configure workspace 
 - [x] Create a components diagram
