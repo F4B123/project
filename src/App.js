@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header /> 
       <p>
-        Welcome to forumm a place where you can share pictures and videos of every topic
+        Do not click the Footer
       </p>
       <Post/>
       <Footer/>

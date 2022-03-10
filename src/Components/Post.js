@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import "./Header.css";
 
-class Post extends Component{
-    render(){
-        return(
-            <>
-                <p> my first post</p>
-                <image></image>
-            </>
-        );
-    }
+function Post(){
+    return(
+        <>
+            <p>first post</p>
+            
+        </>
+    );
 }
 
 export default Post
