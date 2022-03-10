@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <Header /> 
       <p>
-        Do not click the Blackbar
+        Do not click the Blackbar or the login nor the Register
       </p>
+      <p></p>
       <Footer/>
       
     </div>

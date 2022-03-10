@@ -17,9 +17,14 @@ class Footer extends Component{
 
     render(){
         return(
-            <div className="main-footer" onClick={this.clicked}>
-                <p id="text"></p>
-            </div>
+            <>
+                <div className="main-footer" onClick={() => this.clicked()}>
+                    <p id="text"></p>
+                </div>
+                <br/>
+                <div className="second-footer">do you follow rules: {this.state.follow_rules}</div>
+                
+            </>     
         );
     }
 }
