@@ -1,0 +1,9 @@
+.main-footer {
+    color:aqua;
+    background-color: black;
+    padding-bottom: 0%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
