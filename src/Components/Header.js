@@ -13,7 +13,7 @@ function Header(){
                 <nav class="main-nav">
                     <ul>
                         <li><a href = "/" onClick={() => {window.alert('login not available')}}>Log in</a></li>
-                        <li><a href = "/">Register</a></li>
+                        <li><a href = "/" onClick={() => {window.alert('Register not available')}}>Register</a></li>
                     </ul>
                 </nav>
             </header>       

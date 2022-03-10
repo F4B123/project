@@ -9,9 +9,8 @@ function App() {
     <div className="App">
       <Header /> 
       <p>
-        Do not click the Footer
+        Do not click the Blackbar
       </p>
-      <Post/>
       <Footer/>
       
     </div>
