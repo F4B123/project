@@ -13,8 +13,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
-import Hubble from './hubble.jpg';
+
+import Hubble from '../images/hubble.jpg';
 import { Avatar } from "@mui/material";
+import ForumName from './ForumName';
 import './AppBar.css'
 
 const Search = styled("div")(({ theme }) => ({
@@ -154,7 +156,8 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            
+          
+          <ForumName/>
           </Typography>
           <Search>
             <SearchIconWrapper>
