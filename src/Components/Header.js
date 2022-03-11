@@ -1,19 +1,26 @@
 import React from "react";
+import { Avatar } from "@mui/material";
+import Hubble from "./hubble.jpg";
 import "./Header.css";
+
+
+//maybe make the logo the link to the page?
 
 function Header(){
     return(
         <>
-            <header class= "main-header" >
-                <a href = "/" class="web-name">
-                    <div class="web-name1">
-                        Home
+            <header className="main-header" >
+                <div>
+                    <Avatar alt="hubble" src={Hubble} />
+                </div>
+                <a href = "/" className="web-name">
+                    <div className="web-name1">        
                     </div>
                 </a>
-                <nav class="main-nav">
+
+                <nav className="main-nav">
                     <ul>
-                        <li><a href = "/" onClick={() => {window.alert('login not available')}}>Log in</a></li>
-                        <li><a href = "/" onClick={() => {window.alert('Register not available')}}>Register</a></li>
+                        <li><a href = "/" onClick={() => {window.alert('Register not available')}}>Profile</a></li>
                     </ul>
                 </nav>
             </header>       

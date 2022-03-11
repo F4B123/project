@@ -15,6 +15,12 @@ class Footer extends Component{
         })
     }
 
+    getDate(){
+        const date1 = new Date()
+        return(date1.getDate())
+    }
+
+
     render(){
         return(
             <>
@@ -23,6 +29,7 @@ class Footer extends Component{
                 </div>
                 <br/>
                 <div className="second-footer">do you follow rules: {this.state.follow_rules}</div>
+                <p>{this.getDate()}</p>
                 
             </>     
         );

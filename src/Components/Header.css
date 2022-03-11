@@ -1,9 +1,9 @@
 .main-header{
-    background-color: rgb(31, 101, 161);
+    background-color:black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 40px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -23,4 +23,32 @@
 
 .main-nav a:hover {
     color:#adadad;
+}
+
+.logo {
+    flex-grow: 1;
+    max-height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+}
+
+.img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+
+.my-image {
+    background-image: url(https://avatars.akamai.steamstatic.com/9fc29a821f59aa512a163d04e28b9b869b2351e3_full.jpg);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
