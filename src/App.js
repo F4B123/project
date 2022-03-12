@@ -1,21 +1,19 @@
 import './App.css';
 
-import Footer from './Components/Footer';
-import Header from './Components/Header';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
 
 
 function App() {
   return (
-    <div className="App">
-     <Header>
-     </Header>
-      <p>
-        Do not click the Blackbar or the login nor the Register
-      </p>
-      <p></p>
-      <Footer/>
-      
-    </div>
+    <Router>
+    <Routes>
+        <Route exact path='/' element={<HomePage />} />
+        <Route path='/login' element={<LoginPage/>} />
+    </Routes>
+    </Router>
   );
 }
 

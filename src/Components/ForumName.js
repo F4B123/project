@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
-import "./ForumName.css";
+import "../Styles/ForumName.css";
 
 export default function ForumName() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -78,8 +78,13 @@ export default function ForumName() {
           vertical: "top",
           horizontal: "left"
         }}
-      >
-        <MenuItem onClick={handleClose}>Popular</MenuItem>
+      > 
+        <a href="/"  >
+          <MenuItem onClick={handleClose}>Home</MenuItem>
+        </a>
+        <a href="/Popular"  >
+          <MenuItem onClick={handleClose}>Popular</MenuItem>
+        </a>
         <MenuItem onClick={handleClose}>All</MenuItem>
       </Menu>
     </div>

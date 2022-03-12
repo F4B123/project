@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Footer.css"
+import "../Styles/Footer.css"
 
 class Footer extends Component{
 
@@ -28,9 +28,6 @@ class Footer extends Component{
                     <p id="text"></p>
                 </div>
                 <br/>
-                <div className="second-footer">do you follow rules: {this.state.follow_rules}</div>
-                <p>{this.getDate()}</p>
-                
             </>     
         );
     }
