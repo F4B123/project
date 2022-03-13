@@ -4,9 +4,9 @@ import '../Styles/Post.css'
 
 class Post extends Component{
 
-    constructor (){
+    constructor (props){
         super()
-        this.state = {images:'',name:'', description:''}
+        this.state = {images:'',name:props.name, description:''}
         this.api()
     }
 
@@ -18,13 +18,33 @@ class Post extends Component{
           .then(response => response.json())
           .then(response =>  {
             console.log(response)
-            this.setState({name : response.name})
+            //this.setState({name : response.name})
             this.setState({images : response.collection.banner_image_url})
             this.setState({description : response.description})
             })
             .catch(err => console.error(err))
         }
-        
+    
+  
+    static getHex(str){
+        let void1 = '';
+        for( let x = 0; x <str.length ;x++){
+            void1 += str.charCodeAt(x).toString(16);
+        }
+        return void1
+    }
+
+
+    static getDerivedStateFromProps(props,state){ 
+        if(state.name === 'no pasa'){
+            return false;
+        }
+        state.name = "has changed";
+        console.log(state.name);
+        return true
+    }
+
+      
     render(){
         const {images,name,description} = this.state
 

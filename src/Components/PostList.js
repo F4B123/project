@@ -7,7 +7,7 @@ function PostList(){
         <>
         <a href="/post" >
             <div className="container" >
-                <div className="first-post"> <Post></Post> </div>
+                <div className="first-post"> <Post name="no pasa"> </Post> </div>
             </div> 
         </a>     
         </>
