@@ -12,9 +12,6 @@ class HomePage extends Component{
         <div className="App" >
           <Header>
           </Header>
-          <p>
-            Welcome to the main page
-          </p>
           <PostList/>
         </div>
     );

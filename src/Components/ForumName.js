@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
 import "../Styles/ForumName.css";
+import { Link } from 'react-router-dom';
 
 export default function ForumName() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -79,12 +80,12 @@ export default function ForumName() {
           horizontal: "left"
         }}
       > 
-        <a href="/"  >
+        <Link to="/"  >
           <MenuItem onClick={handleClose}>Home</MenuItem>
-        </a>
-        <a href="/Popular"  >
+        </Link>
+        <Link to="/Popular"  >
           <MenuItem onClick={handleClose}>Popular</MenuItem>
-        </a>
+        </Link>
         <MenuItem onClick={handleClose}>All</MenuItem>
       </Menu>
     </div>

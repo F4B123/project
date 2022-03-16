@@ -4,14 +4,14 @@ import '../Styles/Post.css'
 
 class Post extends Component{
 
-    constructor (){
+    constructor (props){
         super()
-        this.state = {images:'',name:'', description:''}
+        this.state = {images:'',name:'', description:'',address:props.address}
         this.api()
     }
 
     api() {
-        let input = '0x06012c8cf97bead5deae237070f9587f8e7a266d';
+        let input = this.state.address;
         const options = {method: 'GET'};
         
         let info = fetch('https://api.opensea.io/api/v1/asset_contract/'+input, options)

@@ -16,6 +16,7 @@ import Logo from './Logo.js'
 import ForumName from './ForumName';
 import SearchBar from './SearchBar.js';
 import '../Styles/AppBar.css'
+import {Link} from 'react-router-dom';
 
 
 export default function Header() {
@@ -60,12 +61,12 @@ export default function Header() {
       onClose={handleMenuClose}
     >
 
-      <a href="/login" >
+      <Link to="/login" >
         <MenuItem onClick={handleMenuClose}>Login</MenuItem>
-      </a> 
-      <a href="/login" onClick={() => window.alert("first Login")}>
+      </Link> 
+      <Link to="/login" onClick={() => window.alert("first Login")}>
         <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-      </a>
+      </Link>
     </Menu>
   );
 

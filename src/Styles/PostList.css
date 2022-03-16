@@ -8,29 +8,11 @@ a {
     
 }
 .first-post {
+    margin-top: 20px;
     padding: auto;
     background-color: black;
     width: 800px;
     height: 500px;
     display: flex;
     flex-direction: row;
-}
-
-.second-post {
-    padding: auto;
-    margin-top: 100px;
-    background-color: black;
-    width: 500px;
-    height: 250px;
-    display: flex;
-    flex-direction: row;
-}
-
-.third-post {
-    background-color: black;
-    width: 200px;
-    height: 250px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
 }
