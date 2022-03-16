@@ -23,3 +23,14 @@ Component diagram updated and new header based on the actual diagram
 - [x] Implement rudimentary styling on each component
 - [ ] Add state management to each component (check "state" on video resources)
 - [ ] Implement a promise method for retrieving any kind of value on every component (both functional and class syntax)
+<<<<<<< HEAD
+=======
+
+# Day 3-4 Activities
+implemented and changed the life-cycle of Post.js
+
+# Activites
+- [x] Implement a router file
+- [x] Render at least two views, and link them using routing.
+
+>>>>>>> 3e3b854345ab7c0b985b7cd23eddc87d07a4d7db
