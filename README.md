@@ -25,4 +25,9 @@ Component diagram updated and new header based on the actual diagram
 - [ ] Implement a promise method for retrieving any kind of value on every component (both functional and class syntax)
 
 # Day 3-4 Activities
+implemented and changed the life-cycle of Post.js
+
+# Activites
+- [x] Implement a router file
+- [x] Render at least two views, and link them using routing.
 
