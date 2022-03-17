@@ -2,12 +2,14 @@ import '../Styles/Login.css'
 import React,{useEffect, useState} from 'react';
 
 
-
 function Login(){
-    var Web3 = require('web3');
-    let [ready, setReady]= useState('Metamask is not installed');
-    
 
+    const Web3 = require('web3');
+    let [ready, setReady]= useState('Metamask is not installed');
+    let [Address, setAddress] = useState(null);
+
+    window.userAddress = null;
+    
     useEffect(() => {
         if (typeof window.ethereum !== 'undefined') {
             setReady('Login')
@@ -15,17 +17,24 @@ function Login(){
           }
     })
 
+    useEffect(() => {
+        ShowInfo()
+    },[Address])
+
+    //Initialize web3 connected to ETH
     const start = async() =>{
         if(window.ethereum){
-            window.web3 = new Web3(ethereum);
+            window.web3 = new Web3(window.ethereum);
             try{
-                await ethereum.enable();
+                await window.ethereum.enable();
             } catch{
                 console.error("error");
             }
         }
 
-        const userAddress = window.localStorage.getItem('userAddress');
+        //load in Localstorage
+        window.userAddress = window.localStorage.getItem('userAddress');
+
     }
 
     function toogleButton(){
@@ -35,14 +44,11 @@ function Login(){
     }
 
     async function loginWithEth(){
-        // const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
-        //     .catch((e) => {
-        //         window.alert("login process stop")
-        //     })
         if(window.web3){
             try{
-                const accounts = await web3.eth.getAccounts();
+                const accounts = await window.web3.eth.getAccounts();
                 window.localStorage.setItem('userAddress', accounts[0]);
+                setAddress(window.userAddress);
             } catch{
                 console.error("error")
             }
@@ -50,11 +56,20 @@ function Login(){
         
     }
 
+    function ShowInfo(){
+        return(
+            <>
+                <p>{Address}</p>
+                <button>Log out</button>
+            </>
+        )    
+    }
+
     return(
         <div className='container'>
             <div className='login-card'>
                 <div className='sign-in-container'>
-                    <button onClick={toogleButton}>{ready}</button>
+                    <button onClick={toogleButton} id="button">{ready}</button>
                 </div>
             </div>     
         </div>

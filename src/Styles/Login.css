@@ -28,4 +28,9 @@
     border-radius: 40px;
     background-color: #282c34;
     color: white;
+    cursor: pointer;
+}
+
+.sign-in-container > p {
+    color: black;
 }
