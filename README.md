@@ -33,4 +33,4 @@ implemented and changed the life-cycle of Post.js
 - [x] Implement a router file
 - [x] Render at least two views, and link them using routing.
 
->>>>>>> 3e3b854345ab7c0b985b7cd23eddc87d07a4d7db
+
