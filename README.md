@@ -21,10 +21,9 @@ Component diagram updated and new header based on the actual diagram
 - [x] Implement at least 2 components of your components diagram (both on functional and class syntaxes)
 - [x] Implement events on each component (at least "onclick" both on functional an class syntaxes)
 - [x] Implement rudimentary styling on each component
-- [ ] Add state management to each component (check "state" on video resources)
-- [ ] Implement a promise method for retrieving any kind of value on every component (both functional and class syntax)
-<<<<<<< HEAD
-=======
+- [x] Add state management to each component (check "state" on video resources)
+- [x] Implement a promise method for retrieving any kind of value on every component (both functional and class syntax)
+
 
 # Day 3-4 Activities
 implemented and changed the life-cycle of Post.js
