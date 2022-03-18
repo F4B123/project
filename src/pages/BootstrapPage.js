@@ -1,33 +1,40 @@
 import React from 'react';
 import Header from '../Components/Header';
 
+
 import '../Styles/BootstrapPage.css';
 
 function BootstrapPage(){
     return(
         <>
-        <Header/>
-        
-        <div class="container">
-            <h1>This is a heading</h1>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/" class="navbar-brand">Forym</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/Bootstrap" class="nav-item nav-link">Bootstrap</a>
+                    </div>
+                    <form class="d-flex">
+                        <div class="input-group">                    
+                            <input type="text" class="form-control" placeholder="Search"/>
+                            <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="navbar-nav">
+                        <a href="/login" class="nav-item nav-link">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" id="test">
+            <h1 class="display-1">This is a heading</h1>
             <p>This is a paragraph of text.</p>
         </div>
-
-        <div class="container-fluid">
-            <h1>This is a heading</h1>
-            <p>This is a paragraph of text.</p>
-        </div>
-
-        <div class="container-sm">100% wide until screen size less than 576px</div>
-        <div class="container-md">100% wide until screen size less than 768px</div>
-        <div class="container-lg">100% wide until screen size less than 992px</div>
-        <div class="container-xl">100% wide until screen size less than 1200px</div>
-
-        <div class="container bg-dark text-black">
-        <h1>This is a heading</h1>
-        <p>This is a paragraph of text.</p>
-        </div>
-
 
         <div class="container bg-light">
             <h1>This is a heading</h1>
