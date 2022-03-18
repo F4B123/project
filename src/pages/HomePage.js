@@ -9,8 +9,7 @@ class HomePage extends Component{
   render(){
     return (
         <div className="App" >
-          <Header>
-          </Header>
+          <Header/>
           <PostList/>
         </div>
     );

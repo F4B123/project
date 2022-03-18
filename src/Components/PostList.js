@@ -5,8 +5,8 @@ import '../Styles/PostList.css'
 function PostList(){
     return(
         <>
-        <a href="/post" >
-            <div className="container" >
+        <a href="/post" id="link">
+            <div className="container-post" >
                 <div className="first-post"> 
                     <Post address="0x06012c8cf97bead5deae237070f9587f8e7a266d"/>
                 </div>

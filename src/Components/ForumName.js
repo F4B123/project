@@ -53,7 +53,6 @@ export default function ForumName() {
     }
   });
 
-
   return (
     <div>
       <HomeButton className="main-button"
@@ -80,13 +79,10 @@ export default function ForumName() {
           horizontal: "left"
         }}
       > 
-        <Link to="/"  >
+        <Link to="/"  id="link">
           <MenuItem onClick={handleClose}>Home</MenuItem>
         </Link>
-        <Link to="/Popular"  >
-          <MenuItem onClick={handleClose}>Popular</MenuItem>
-        </Link >
-        <Link to ="/Bootstrap">
+        <Link to ="/Bootstrap" id="link">
           <MenuItem onClick={handleClose}>Bootstrap</MenuItem>
         </Link>
       </Menu>

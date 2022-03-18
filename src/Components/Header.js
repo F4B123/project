@@ -19,6 +19,7 @@ import '../Styles/AppBar.css'
 import {Link} from 'react-router-dom';
 
 
+
 export default function Header() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -43,6 +44,7 @@ export default function Header() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -61,10 +63,10 @@ export default function Header() {
       onClose={handleMenuClose}
     >
 
-      <Link to="/login" >
+      <Link to="/login" id="link">
         <MenuItem onClick={handleMenuClose}>Login</MenuItem>
       </Link> 
-      <Link to="/login" onClick={() => window.alert("first Login")}>
+      <Link to="/login" id="link" onClick={() => window.alert("first Login")}>
         <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       </Link>
     </Menu>

@@ -3,3 +3,8 @@
 .main-button {
     font-family: Poppins, sans-serif;
 }
+
+#link {
+    text-decoration: none;
+    color: inherit;
+}

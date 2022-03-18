@@ -1,10 +1,6 @@
-a {
-    text-decoration:none;
-}
-
-.container {
+.container-post {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     
 }
 .first-post {
@@ -15,4 +11,8 @@ a {
     height: 500px;
     display: flex;
     flex-direction: row;
+}
+
+#link {
+    text-decoration: none;
 }

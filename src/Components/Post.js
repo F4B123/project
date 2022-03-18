@@ -31,9 +31,14 @@ class Post extends Component{
         return(
             <>
                 <div className="main">
-                    <div className="name" >{name}</div>
+                    <div className="name" >
+                        <h1 class="display-3">{name}</h1>
+                    </div>
                     <img src={images} width="800px" className="img"/>
-                    <div className="name" >{description}</div>
+                    <div className="name" >
+                        <p class="lead">{description}</p>
+                        
+                    </div>
                 </div>
                 
             </>

@@ -13,8 +13,7 @@ function LoginPage(){
         <p>
           Welcome to the login Page
         </p>
-        <Login></Login>
-        <Footer/>             
+        <Login></Login>             
       </div>
     );
 }
