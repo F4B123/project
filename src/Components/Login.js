@@ -57,19 +57,28 @@ function Login(){
     }
 
     function ShowInfo(){
-        return(
-            <>
-                <p>{Address}</p>
-                <button>Log out</button>
-            </>
-        )    
+        if(Address !== null){
+            return(
+                <>
+                    <p>{Address}</p>
+                    <button>Log out</button>
+                </>
+            )  
+        }
+        else{
+            return(
+                <></>
+            )
+        }
+          
     }
 
     return(
-        <div className='container'>
+        <div className='container-component'>
             <div className='login-card'>
                 <div className='sign-in-container'>
                     <button onClick={toogleButton} id="button">{ready}</button>
+                    <ShowInfo/>
                 </div>
             </div>     
         </div>

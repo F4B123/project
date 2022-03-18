@@ -85,8 +85,10 @@ export default function ForumName() {
         </Link>
         <Link to="/Popular"  >
           <MenuItem onClick={handleClose}>Popular</MenuItem>
+        </Link >
+        <Link to ="/Bootstrap">
+          <MenuItem onClick={handleClose}>Bootstrap</MenuItem>
         </Link>
-        <MenuItem onClick={handleClose}>All</MenuItem>
       </Menu>
     </div>
   );
