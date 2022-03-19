@@ -44,3 +44,21 @@ body{
     transform: rotate(360deg);
   }
 }
+
+
+.app-login {
+  height: 100vh;
+  text-align: center;
+}
+
+#title {
+  color:white;
+}
+
+.admin-body {
+  color: white;
+}
+
+#link {
+  text-decoration: none;
+}

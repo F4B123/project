@@ -3,7 +3,7 @@
     justify-content: center;
     
 }
-.first-post {
+.post {
     margin-top: 20px;
     padding: auto;
     background-color: black;
@@ -15,4 +15,5 @@
 
 #link {
     text-decoration: none;
+    cursor: pointer;
 }

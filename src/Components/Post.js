@@ -32,7 +32,7 @@ class Post extends Component{
             <>
                 <div className="main">
                     <div className="name" >
-                        <h1 class="display-3">{name}</h1>
+                        <h1 className="display-3">{name}</h1>
                     </div>
                     <img src={images} width="800px" className="img"/>
                     <div className="name" >

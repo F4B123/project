@@ -2,13 +2,14 @@ import React from "react";
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import '../Styles/AppBar.css'
 
 const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
     backgroundColor: "black",
     "&:hover": {
-      backgroundColor: alpha(theme.palette.common.white, 0.25)
+      backgroundColor: "rgba(240, 248, 255, 0.287)"
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
@@ -29,30 +30,33 @@ const Search = styled("div")(({ theme }) => ({
     justifyContent: "center"
   }));
   
-  const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    color: "inherit",
-    "& .MuiInputBase-input": {
-      padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-      transition: theme.transitions.create("width"),
-      width: "100%",
-      [theme.breakpoints.up("md")]: {
-        width: "20ch"
-      }
+
+
+  //thanks to https://stackoverflow.com/a/35342982/18385293
+  const checkInput = () =>{
+    debugger
+    if(document.getElementById('search') !== null){
+      var query = document.getElementById('search').value;
+      window.find(query);
+      return true;
     }
-  }));
+    return false;
+  }
+
+  //thanks to https://stackoverflow.com/a/35707795
+  const handleKeyPress = (event) => {
+    if(event.key === 'Enter'){
+      checkInput();
+    }
+  }
 
   function SearchBar(){
     return(
         <Search>
-            <SearchIconWrapper>
+          <SearchIconWrapper>
               <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
+          </SearchIconWrapper>
+          <input type="text" id="search" onKeyPress={handleKeyPress} placeholder="press enter to search"/>
         </Search>
     );
   }

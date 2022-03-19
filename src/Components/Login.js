@@ -1,5 +1,7 @@
 import '../Styles/Login.css'
 import React,{useEffect, useState} from 'react';
+import Logo from '../images/download.png'
+import { Link }from 'react-router-dom';
 
 
 function Login(){
@@ -31,6 +33,7 @@ function Login(){
                 console.error("error");
             }
         }
+        
 
         //load in Localstorage
         window.userAddress = window.localStorage.getItem('userAddress');
@@ -57,17 +60,16 @@ function Login(){
     }
 
     function ShowInfo(){
-        if(Address !== null){
+        if(typeof window.ethereum !== 'undefined'){
             return(
                 <>
-                    <p>{Address}</p>
-                    <button>Log out</button>
+                    <button onClick={toogleButton} id="button-1">{ready}</button>
                 </>
             )  
         }
         else{
             return(
-                <></>
+                <button onClick={toogleButton} id="button-1" disabled>{ready}</button>
             )
         }
           
@@ -77,8 +79,12 @@ function Login(){
         <div className='container-component'>
             <div className='login-card'>
                 <div className='sign-in-container'>
-                    <button onClick={toogleButton} id="button">{ready}</button>
-                    <ShowInfo/>
+                    <img src={Logo}  class="img-circle" width="100"/>
+                    <p>Login with metamask</p>
+                    <Link to="/Admin" >
+                        <ShowInfo/>
+                    </Link>
+                    
                 </div>
             </div>     
         </div>
